@@ -2,6 +2,9 @@
 
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg) ![Platform](https://img.shields.io/badge/platform-ESP32-green) ![Edge Impulse](https://img.shields.io/badge/Edge%20Impulse-FOMO-orange)
 
+![ESP32-CAM FOMO Fruit Detection Demo](FomoFruit.webp)
+*Real-time fruit detection predictions shown on the Serial Monitor alongside the source image.*
+
 A lightweight computer vision project that implements real-time fruit detection on the ESP32-CAM development board. By utilizing Edge Impulse's **FOMO (Faster Objects, More Objects)** architecture, this system achieves object localization and classification on a microcontroller with only 4MB PSRAM, where standard object detection models (like YOLO or MobileNet SSD) would fail or run too slowly.
 
 ## 🎯 Project Overview
