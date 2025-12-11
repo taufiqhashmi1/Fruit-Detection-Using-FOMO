@@ -89,6 +89,9 @@ Standard AI-Thinker Pin definition used in `camera_pins.h`:
 1.  Open the Serial Monitor (Baud Rate: 115200).
 2.  The Serial Monitor will reflect the predictions
 
+## Confusion Matrix
+<img width="609" height="538" alt="image" src="https://github.com/user-attachments/assets/682f0014-f92b-44a1-a23b-fa28bc64b88d" />
+
 ## 🤝 Contributing
 
 1.  Fork the Project
