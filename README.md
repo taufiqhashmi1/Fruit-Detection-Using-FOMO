@@ -1,6 +1,6 @@
 # FOMO Fruit Detection (ESP32-CAM)
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Platform](https://img.shields.io/badge/platform-ESP32-green) ![Edge Impulse](https://img.shields.io/badge/Edge%20Impulse-FOMO-orange)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg) ![Platform](https://img.shields.io/badge/platform-ESP32-green) ![Edge Impulse](https://img.shields.io/badge/Edge%20Impulse-FOMO-orange)
 
 A lightweight computer vision project that implements real-time fruit detection on the ESP32-CAM development board. By utilizing Edge Impulse's **FOMO (Faster Objects, More Objects)** architecture, this system achieves object localization and classification on a microcontroller with only 4MB PSRAM, where standard object detection models (like YOLO or MobileNet SSD) would fail or run too slowly.
 
@@ -12,7 +12,7 @@ Standard object detection models require significant processing power and memory
 3.  Runs significantly faster (up to 30x) than MobileNet SSD on DSP-capable silicon.
 
 **Target Hardware:** ESP32-CAM (AI-Thinker Model)
-**Classes Detected:** Apples, Bananas, Oranges (Customizable)
+**Classes Detected:** Apples, Bananas, Pineapple and Grapes (Customizable)
 
 ## ⚡ Features
 
@@ -73,12 +73,7 @@ Standard AI-Thinker Pin definition used in `camera_pins.h`:
 ### 3. Code Configuration
 1.  Clone this repository.
 2.  Open the `.ino` file.
-3.  Update WiFi credentials:
-    ```cpp
-    const char* ssid = "YOUR_WIFI_SSID";
-    const char* password = "YOUR_WIFI_PASSWORD";
-    ```
-4.  Ensure `#define CAMERA_MODEL_AI_THINKER` is uncommented.
+3.  Ensure `#define CAMERA_MODEL_AI_THINKER` is uncommented.
 
 ### 4. Flashing
 1.  Connect GPIO 0 to GND.
@@ -89,9 +84,7 @@ Standard AI-Thinker Pin definition used in `camera_pins.h`:
 ## 🖥️ Usage
 
 1.  Open the Serial Monitor (Baud Rate: 115200).
-2.  Copy the IP address printed (e.g., `http://192.168.1.105`).
-3.  Open the IP in a browser.
-4.  Click **"Start Stream"** to see the video feed with visual markers on detected fruits.
+2.  The Serial Monitor will reflect the predictions
 
 ## 🤝 Contributing
 
@@ -103,4 +96,6 @@ Standard AI-Thinker Pin definition used in `camera_pins.h`:
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the Apache License 2.0. See `LICENSE` for more information.
+
+*Note: The machine learning model and inference SDK are provided by Edge Impulse under the Apache License 2.0.*
